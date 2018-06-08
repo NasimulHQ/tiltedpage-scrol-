@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jqplugin</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/custom.js">
+    <link rel="stylesheet" href="css/tiltedpage-scroll.css">
+
+
+</head>
+
+<body>
+    <div class="main">
+  <section class="page1">
+    <img src="images/demo1.jpg" alt="">
+  </section>
+  <section class="page2">
+  <img src="images/demo2.jpg" alt="">
+  </section>
+ <section class="page3">
+  <img src="images/demo3.jpg" alt="">
+  </section>
+  <section class="last-page">
+   <img src="images/demo4.jpg" alt="">
+  </section>
+</div>
+
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+    <script src="js/jquery.tiltedpage-scroll.js"></script>
+    
+    <script type="text/javascript">
+    $(".main").tiltedpage_scroll({
+    sectionContainer: "> section",     
+    angle: 50,                         
+    opacity: true,                    
+    scale: true,                       
+    outAnimation: true                
+  });
+    </script>
+
+</body>
+
+</html>
